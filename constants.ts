@@ -58,27 +58,23 @@ export const ZOIS_MINERALS_GALLERY: GalleryItem[] = [
 export const WORK_HOURS_DATA: WorkHourStat[] = [
   {
     role: 'Video Editor',
-    hours: 940,
-    tasks: 'Montaža, rotoscoping brkov, korekcija "žarenja", animacija',
-    citation: 'cite: 446'
+    hours: 235,
+    tasks: 'Montaža, rotoscoping brkov, korekcija "žarenja", animacija'
   },
   {
     role: 'Sound Engineer',
-    hours: 460,
-    tasks: 'Sinhronizacija govora, odprava časovnih zamikov, mastering',
-    citation: 'cite: 453'
+    hours: 115,
+    tasks: 'Sinhronizacija govora, odprava časovnih zamikov, mastering'
   },
   {
     role: 'AI Asistent',
-    hours: 200,
-    tasks: 'Analiza scenarijev, generiranje QR kod, klasifikacija gliv',
-    citation: 'cite: 458'
+    hours: 50,
+    tasks: 'Analiza scenarijev, generiranje QR kod, klasifikacija gliv'
   }
 ];
 
 export const PROJECT_STATS: StatMetric[] = [
-  { value: '1.600', label: 'Delovnih ur', citation: 'cite: 217', icon: 'clock' },
-  { value: '3', label: 'Ekipe (Video, Zvok, AI)', citation: 'cite: 142', icon: 'users' },
-  { value: '18', label: 'Muzejskih Panojev', citation: 'cite: 126', icon: 'image' },
-  { value: '64k €', label: 'Vrednost projekta', citation: 'cite: 219', icon: 'euro' }
+  { value: '400', label: 'Delovnih ur', icon: 'clock' },
+  { value: '3', label: 'Ekipe (Video, Zvok, AI)', icon: 'users' },
+  { value: '16k €', label: 'Vrednost projekta', icon: 'euro' }
 ];

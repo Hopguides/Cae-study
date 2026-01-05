@@ -26,7 +26,8 @@ const Gallery: React.FC<GalleryProps> = ({ title, subtitle, items }) => {
               onMouseEnter={() => setHoveredId(item.id)}
               onMouseLeave={() => setHoveredId(null)}
             >
-              <div className="aspect-[4/5] overflow-hidden">
+              {/* Changed from aspect-[4/5] to aspect-video (16:9) to fit video frames correctly */}
+              <div className="aspect-video overflow-hidden">
                 <img 
                   src={item.url} 
                   alt={item.title_sl}

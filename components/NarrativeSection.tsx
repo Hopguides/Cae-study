@@ -42,10 +42,10 @@ const NarrativeSection: React.FC = () => {
         </div>
       </div>
 
-      {/* 2. Skladnost z razpisom */}
+      {/* 2. Zakaj je to vzorčen projekt za vas */}
       <div className="bg-hop-pastel rounded-3xl p-8 md:p-12 border border-orange-100">
         <h2 className="text-3xl font-heading font-bold text-hop-black mb-10 text-center">
-          2. Skladnost z razpisom MGRT
+          2. Zakaj je to vzorčen projekt za vas
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

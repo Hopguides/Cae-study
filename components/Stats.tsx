@@ -15,7 +15,7 @@ const Stats: React.FC = () => {
 
   return (
     <div className="max-w-6xl mx-auto px-6 -mt-12 relative z-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {PROJECT_STATS.map((stat, index) => (
           <div key={index} className="bg-white shadow-xl shadow-gray-200/50 rounded-2xl p-8 transform transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
             <div className="flex flex-col items-center text-center">
@@ -23,7 +23,6 @@ const Stats: React.FC = () => {
               <span className="text-4xl font-heading font-bold text-hop-black">{stat.value}</span>
               <p className="text-sm uppercase tracking-wide text-gray-500 mt-2 font-bold font-sans">
                 {stat.label}
-                <sup className="text-[10px] ml-1 text-gray-400 font-normal">[{stat.citation}]</sup>
               </p>
             </div>
           </div>

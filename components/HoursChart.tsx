@@ -13,7 +13,6 @@ const CustomTooltip = ({ active, payload, label }: any) => {
         <p className="font-heading font-bold text-lg mb-1">{label}</p>
         <p className="text-hop-primary font-bold text-2xl mb-2">{data.hours} ur</p>
         <p className="text-sm text-gray-600 border-t pt-2 border-gray-100 font-sans">{data.tasks}</p>
-        <div className="mt-2 text-xs text-gray-400 text-right font-mono">[{data.citation}]</div>
       </div>
     );
   }
@@ -35,7 +34,7 @@ const HoursChart: React.FC = () => {
             4. Dokazana izvedljivost <span className="text-hop-primary">(Pilotna faza)</span>
           </h2>
           <p className="text-gray-600 mb-8 font-sans text-lg">
-            Projekt temelji na uspešno izvedenem pilotu (april–november 2025), kjer je bilo vloženih več kot 1.600 delovnih ur. Vzpostavljen je jasen delovni proces in pripravljene so vsebine.
+            Projekt temelji na uspešno izvedenem pilotu (april–november 2025), kjer je bilo vloženih več kot 400 delovnih ur. Vzpostavljen je jasen delovni proces in pripravljene so vsebine.
           </p>
 
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
