@@ -1,6 +1,7 @@
 import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 import { WORK_HOURS_DATA } from '../constants';
+import { CheckCircle2 } from 'lucide-react';
 
 const COLORS = ['#FF3200', '#000000', '#9CA3AF']; // Primary, Black, Gray
 
@@ -21,16 +22,20 @@ const CustomTooltip = ({ active, payload, label }: any) => {
 
 const HoursChart: React.FC = () => {
   return (
-    <section className="max-w-6xl mx-auto px-6 py-20 bg-gray-50 rounded-3xl my-10">
+    <section className="max-w-6xl mx-auto px-6 py-20 bg-gray-50 rounded-3xl my-10 border border-gray-100">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         
         {/* Table View */}
         <div>
+          <div className="flex items-center gap-2 mb-2 text-green-600 font-bold uppercase tracking-wider text-xs">
+            <CheckCircle2 className="w-4 h-4" />
+            <span>Faza 4: Zaključeno</span>
+          </div>
           <h2 className="text-3xl font-heading font-bold text-hop-black mb-6">
-            Analiza <span className="text-hop-primary">Delovnih Ur</span>
+            4. Dokazana izvedljivost <span className="text-hop-primary">(Pilotna faza)</span>
           </h2>
           <p className="text-gray-600 mb-8 font-sans text-lg">
-            Na podlagi analize e-poštnih sporočil in projektne dokumentacije smo identificirali naslednjo delitev dela med ključnimi ekipami.
+            Projekt temelji na uspešno izvedenem pilotu (april–november 2025), kjer je bilo vloženih več kot 1.600 delovnih ur. Vzpostavljen je jasen delovni proces in pripravljene so vsebine.
           </p>
 
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden">
@@ -39,7 +44,7 @@ const HoursChart: React.FC = () => {
                 <tr>
                   <th className="p-4 font-heading font-semibold tracking-wide">Vloga</th>
                   <th className="p-4 font-heading font-semibold text-right">Ure</th>
-                  <th className="p-4 font-heading font-semibold hidden sm:table-cell">Naloge</th>
+                  <th className="p-4 font-heading font-semibold hidden sm:table-cell">Ključne naloge</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-100">
@@ -49,7 +54,6 @@ const HoursChart: React.FC = () => {
                     <td className="p-4 text-right font-bold text-hop-primary">{row.hours}</td>
                     <td className="p-4 text-sm text-gray-600 hidden sm:table-cell">
                       {row.tasks} 
-                      <sup className="text-gray-400 ml-1">[{row.citation}]</sup>
                     </td>
                   </tr>
                 ))}
@@ -60,7 +64,7 @@ const HoursChart: React.FC = () => {
 
         {/* Chart View */}
         <div className="h-[400px] w-full bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
-          <h3 className="text-center font-heading text-gray-400 mb-6 uppercase tracking-widest text-sm font-bold">Distribucija Dela</h3>
+          <h3 className="text-center font-heading text-gray-400 mb-6 uppercase tracking-widest text-sm font-bold">Investicija Časa in Virov</h3>
           <ResponsiveContainer width="100%" height="100%">
             <BarChart
               data={WORK_HOURS_DATA}

@@ -1,5 +1,7 @@
 {
   "name": "Žiga Zois: Digitalna Renesansa",
-  "description": "A digital case study for the Natural History Museum of Slovenia, showcasing the revitalization of Baron Žiga Zois using technology.",
-  "requestFramePermissions": []
+  "description": "Interaktivno doživetje razsvetljenstva s pomočjo umetne inteligence - strateški turistični produkt za razpis MGRT.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
 }
